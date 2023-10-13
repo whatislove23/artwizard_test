@@ -32,31 +32,28 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="/artist">
+            <Link className={styles.link} href="/">
               Для бізнесів
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="/about">
+            <Link className={styles.link} href="/">
               Про нас
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="/contacts">
+            <Link className={styles.link} href="/">
               Контакти
             </Link>
           </li>
         </ul>
         <Link
           className={[styles.mobileLink, "hidden md:block"].join(" ")}
-          href="/mobile"
+          href="/"
         >
           У додатку краще!
         </Link>
-        <Link
-          className={[styles.mobileLink, "md:hidden"].join(" ")}
-          href="/mobile"
-        >
+        <Link className={[styles.mobileLink, "md:hidden"].join(" ")} href="/">
           Додаток
         </Link>
         <Image

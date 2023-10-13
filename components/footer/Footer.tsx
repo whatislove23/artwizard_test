@@ -29,17 +29,17 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href="/artist">
+              <Link className={styles.link} href="/">
                 Для бізнесів
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href="/about">
+              <Link className={styles.link} href="/">
                 Про нас
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href="/contacts">
+              <Link className={styles.link} href="/">
                 Контакти
               </Link>
             </li>
