@@ -6,7 +6,7 @@ import styles from "../footer/footer.module.css";
 const manrope = Manrope({ subsets: ["cyrillic-ext"] });
 export default function Footer() {
   return (
-    <footer className="px-20 py-7 flex justify-between items-center border-t border-mygrey-50">
+    <footer className="xl:px-20 lg:px-20 lg:py-7 md:flex md:justify-between md:pt-7 md:px-6 p-4 border-t border-mygrey-50">
       <p
         className={[
           manrope.className,
@@ -17,7 +17,7 @@ export default function Footer() {
       </p>
       <div>
         <nav>
-          <ul className="flex items-center justify-end">
+          <ul className="md:mt-0 mt-6 flex  flex-wrap  gap-1">
             <li>
               <Link className={styles.link} href="/">
                 Mісто
@@ -45,21 +45,21 @@ export default function Footer() {
             </li>
           </ul>
         </nav>
-        <div className="flex gap-4 mt-6">
-          <Link href="">
+        <div className="mt-6 md:flex-row md:justify-end flex flex-col gap-4">
+          <Link href="https://play.google.com/store/apps/details?id=com.lisovyk.ArtWizard&utm_source=landing">
             <Image
               src={"./google_footer.svg"}
               alt="Download from Playmarket"
-              width={312}
+              width={249}
               height={57}
               className="hover:cursor-pointer"
             />
           </Link>
-          <Link href="">
+          <Link href="https://apps.apple.com/us/app/artwizard/id1660785285?utm_source=landing">
             <Image
               src={"/apple_footer.svg"}
               alt="Download from Appstore"
-              width={302}
+              width={243}
               height={69}
               className="hover:cursor-pointer"
             />

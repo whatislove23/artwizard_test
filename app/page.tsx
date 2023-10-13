@@ -4,12 +4,12 @@ import Link from "next/link";
 const manrope = Manrope({ subsets: ["cyrillic-ext"] });
 export default function Home() {
   return (
-    <main className="mx-20 mt-10 ">
-      <h1 className="text-9xl font-medium text-mygrey-900">
+    <main className="lg:mx-20 md:mx-6 mx-4 mt-10 ">
+      <h1 className="xl:text-[124px] lg:text-8xl md:text-5xl text-3xl font-medium text-mygrey-900">
         Твій кишеньковий мольфар мистецтва
       </h1>
-      <div className="mt-6 flex justify-between">
-        <div className="">
+      <div className="lg:met-6 lg:flex mt-4">
+        <div className="flex flex-col w-full">
           <p
             className={[
               manrope.className,
@@ -18,8 +18,8 @@ export default function Home() {
           >
             Слідкуй за розкладом в зручному додатку
           </p>
-          <div className="flex gap-2 mt-8">
-            <Link href="">
+          <div className="lg:mt-8 md:flex-row flex flex-col  gap-2 mt-6">
+            <Link href="https://play.google.com/store/apps/details?id=com.lisovyk.ArtWizard&utm_source=landing">
               <Image
                 src={"./google.svg"}
                 alt="Download from Playmarket"
@@ -28,7 +28,7 @@ export default function Home() {
                 className="hover:cursor-pointer"
               />
             </Link>
-            <Link href="">
+            <Link href="https://apps.apple.com/us/app/artwizard/id1660785285?utm_source=landing">
               <Image
                 src={"/apple.svg"}
                 alt="Download from Appstore"
@@ -42,9 +42,9 @@ export default function Home() {
         <Image
           src={"/hero.png"}
           alt="Hero image"
-          width={898}
-          height={946}
-          className="-mt-36 mr-28"
+          width={870}
+          height={947}
+          className="xl:mr-40 xl:-mt-[143px] xl:-mt-[123px] xl:w-[870px] xl:h-[947px] lg:-mt-[122px]  lg:-mr-[9px] lg:w-[737px] lg:h-[801px] md:w-[698px] md:h-[758px] w-[349px] h-[379px]"
         />
       </div>
     </main>

@@ -7,15 +7,20 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "360px",
+      md: "768px",
+      lg: "1440px",
+      xl: "1920px",
+    },
     colors: {
       mygrey: {
         50: "#EDEEEF",
-
         500: "#4D525C",
-
         900: "#202227",
       },
     },
+
     extend: {},
   },
   plugins: [],

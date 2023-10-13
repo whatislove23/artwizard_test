@@ -5,6 +5,7 @@
   font-weight: 600;
   transition: all 0.3s ease-in-out;
   letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 .link:hover {
   color: #202227b4;

@@ -12,7 +12,11 @@
   transition: all 0.3s ease-in-out;
 }
 .mobileLink {
-  padding: 0.5rem 1.25rem;
+  width: min-content;
+  height: 36px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 7px 20px;
   font-size: 14px;
   color: #ffff;
   border-radius: 999px;
