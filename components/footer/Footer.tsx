@@ -2,8 +2,9 @@ import { Manrope } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
 
-import styles from "../footer/footer.module.css";
 const manrope = Manrope({ subsets: ["cyrillic-ext"] });
+const linkStyle =
+  "p-2 px-5 text-mygrey-900 text-sm flex items-center font-semibold transition duration-300 ease-in-out hover:text-mygrey-500";
 export default function Footer() {
   return (
     <footer className="xl:px-20 lg:px-20 lg:py-7 md:flex md:justify-between md:pt-7 md:px-6 p-4 border-t border-mygrey-50">
@@ -19,27 +20,27 @@ export default function Footer() {
         <nav>
           <ul className="md:mt-0 mt-6 flex  flex-wrap  gap-1">
             <li>
-              <Link className={styles.link} href="/">
+              <Link className={linkStyle} href="/">
                 Mісто
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href="/">
+              <Link className={linkStyle} href="/">
                 Артист
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href="/">
+              <Link className={linkStyle} href="/">
                 Для бізнесів
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href="/">
+              <Link className={linkStyle} href="/">
                 Про нас
               </Link>
             </li>
             <li>
-              <Link className={styles.link} href="/">
+              <Link className={linkStyle} href="/">
                 Контакти
               </Link>
             </li>

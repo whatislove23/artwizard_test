@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./header.module.css";
-
+const linkStyle =
+  "p-2 px-5 text-mygrey-900 text-sm flex items-center font-semibold transition duration-300 ease-in-out hover:text-mygrey-500";
 function Header() {
   return (
     <header className=" lg:mx-20 md:mx-6 md:my-4 m-4 flex justify-between  items-center ">
@@ -15,7 +16,7 @@ function Header() {
       <nav className="flex items-center">
         <ul className="hidden lg:flex w-full">
           <li>
-            <Link className={styles.link} href="/">
+            <Link className={linkStyle} href="/">
               Mісто
               <Image
                 src={"/Group.svg"}
@@ -27,28 +28,28 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="/">
+            <Link className={linkStyle} href="/">
               Артист
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="/">
+            <Link className={linkStyle} href="/">
               Для бізнесів
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="/">
+            <Link className={linkStyle} href="/">
               Про нас
             </Link>
           </li>
           <li>
-            <Link className={styles.link} href="/">
+            <Link className={linkStyle} href="/">
               Контакти
             </Link>
           </li>
         </ul>
         <Link
-          className={[styles.mobileLink, "hidden md:block"].join(" ")}
+          className={[styles.mobileLink, "hidden md:block "].join(" ")}
           href="/"
         >
           У додатку краще!
